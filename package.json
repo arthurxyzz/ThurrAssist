@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "start": "vite build",
-    "preview": "vite preview"
+    "predeploy": "npm run build",    
+    "deploy": "gh-pages -d dist",
   },
   "dependencies": {
     "@google/generative-ai": "^0.12.0",
